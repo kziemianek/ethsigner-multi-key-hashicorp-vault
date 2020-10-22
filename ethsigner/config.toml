@@ -1,0 +1,12 @@
+# Chain
+chain-id=2017
+
+# Path
+data-path="/conf/ethsigner" # Path
+
+# Ethereum client (Besu)
+downstream-http-host="localhost"
+downstream-http-port=8545
+
+# multi-key
+multikey-signer.directory="/conf/ethsigner/key-configs"
