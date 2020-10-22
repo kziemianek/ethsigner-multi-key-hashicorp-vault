@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  ethsigner:
+    image: pegasyseng/ethsigner:0.7
+    environment:
+      - ETHSIGNER_CONFIG_FILE=/conf/ethsigner/config.toml
+    ports:
+      - 8545:8549
+    volumes:
+      - ./ethsigner:/conf/ethsigner
+    command: [
+        "multikey-signer"
+    ]
